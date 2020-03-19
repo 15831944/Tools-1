@@ -1,0 +1,200 @@
+Versión 5.0.1
+-------------
+- Corregido: La lista de adaptadores de red en Windows Vista/7 incluía tambien los adaptadores
+  desactivados.
+- Corregido: El programa no detectaba a veces la lista de adaptadores de red, especialmente en
+  Vista/7.
+- Corregido: En ciertas situaciones el programa fallaba al guardar la configuración para todos
+  los usuarios.
+- Corregido: Al usar la misma configuración para todos los usuarios el programa mostraba una
+  confirmación del Control de Cuentas de Usuario antes de activar la planificación de apagado,
+  incluso si la configuración no había cambiado.
+- Corregido: El programa no guardaba correctamente el valor AM/PM de la hora de cierre.
+
+Versión 5.0.0
+-------------
+- Nuevo modo de cierre: Inactividad de usuario (sin actividad desde el teclado o raton).
+- Nuevo modo de cierre: Inactividad de red (transferencia de entrada y/o salida).
+- Nueva opción de planificación: Ahora se puede seleccionar mas de una condición de apagado a la
+  vez (por ejemplo, apagar cuando no haya actividad de CPU ni de red).
+- Mejorada la compatibilidad con Windows Vista/7.
+- Opción de promediar los valores de uso de CPU para minimizar el efecto de valores de pico.
+- Cambios en la ventana de aviso de apagado:
+  · Añadido un botón de Reconfigurar.
+  · El botón de Reactivar es reemplazado con el botón de Postponer para las condiciones de apagado
+    "Fecha/hora" e "Intervalo".
+  · Al usar cualquiera de los botones de esa ventana se solicitará la contraseña administrativa
+    (si se ha establecido alguna).
+- Cambios en la ventana de display:
+  · Varios ajustes para reflejar mejor el cierre planificado.
+  · Opción de establecer transparencia.
+  · Modificados (de nuevo) los colores de fondo de los gráficos para hacerlos mas legibles.
+- Corregido: Auto-reactivar cierre no funcionaba con Bloquear sesión.
+- Corregido: el programa comprobaba la fecha de cierre incluso cuando no se usaba la condición
+  de "Fecha/hora"
+- Corregido: Al usar la condición de "Fecha/hora", el cierre no se realizaba si se cambiaba el
+  reloj del sistema a una hora posterior a la hora de cierre.
+- Corregido: Si el salvapantallas estaba activado a la hora del cierre, la captura de pantalla
+  incluía el salvapantallas en lugar de los contenidos del escritorio.
+- Algunos otros pequeños cambios y correcciones.
+
+Version 4.55
+------------
+- El intervalo para el cierre puede ser establecido también en días.
+- Arreglado: El programa no restauraba la ventana principal desde el icono de la barra de tareas
+  si se conectaba o desconectaba un monitor secundario.
+
+Version 4.51
+------------
+- Arreglado un fallo en la protección anti-cierre.
+
+Version 4.50
+------------
+- Añadios cierre y reinicio administrativos, tanto en en equipo local como en equipos en red.
+- Mejorada la proteccion del programa: Si el programa es abortado, puede reiniciarse a si mismo
+  automaticamente o puede iniciar un cierre de emergencia (ahora tambien para Windows 2000/XP/Vista).
+- Interfaz mejorado: Añadida una barra de menus y movidos los botones de accion a una barra de
+  herramientas. Además, ahora se puede activar y desactivar el apagado desde el icono de la barra de
+  tareas.
+- Añadido un boton en la ventana de confirmacion de apagado para reactivar/postponer el cierre.
+- Si el programa está activo y es ejecutado de nuevo, la copia actual es activada en vez de mostrar
+  un mensaje de aviso.
+- Modificado el color de los graficos del display para hacerlos mas legibles.
+- Arreglado algunos problemas que impedian usar la tecla Windows como atajo de teclado.
+- Añadido el archivo de ayuda.
+- Algunos otros pequeños cambios y correcciones.
+
+Version 4.21
+------------
+- Areglados algunos problemas con el medidor de carga de la CPU.
+
+Version 4.20
+------------
+- Soporte completo para Temas de Escritorio de Windows XP (usando Windows XP Theme Manager
+  by Mike Lischke).
+- Añadida una opción para reactivar o no explícitamente el ultimo cierre programado.
+  Esto permite lanzar el programa al inicio de sesión sin reactivar el ultimo cierre.
+- Relacionado con el punto anterior, la reactivación del cierre funciona ahora con todos
+  los modos.
+- Cambiada la forma en el que el cierre por inactividad de CPU funciona: ahora está basada
+  en el porcentaje de uso de la CPU en vez de usar el porcentaje de inactividad (que era
+  bastante confuso para algunas personas).
+- El menú/botón "Cerrar ahora" muestra ahora un menú para elegir el tipo de cierre en vez
+  de usar el ultimo tipo de cierre usado.
+- La fecha de cierre (si se usa) es mostrada ahora en el display.
+- Arreglado: programar un cierre no impide el cierre del sistema desde el Menú Inicio.
+- Arreglado: ahora se pueden se pueden especificar parámetros de linea de comandos para el
+  programa a ejecutar antes del cierre.
+- Algunos otros pequeños cambios y arreglos.
+
+Version 4.10
+------------
+- Añadida la opción de oculta el icono de la barra de tareas (modo
+  silencioso). En este modo, se puede acceder a la ventana de configuración
+  usando una tecla de acceso directo.
+- El botón de cancelar de la ventana de aviso ahora puede ser desactivado,
+  añadiendo la posibilidad de mostrar un aviso sin permitir la cancelación
+  del cierre.
+- Añadidos sugerencias de ayuda para todas las opciones.
+- Arreglado el fallo cuando se usan las opciones para todos los usuarios:
+  ahora los usuarios limitados pueden leer la configuración global.
+- Anteriormente, cambiar los opciones del display desdes el menu de del
+  icono hacía permanentes los cambios, aunque no hubieran sidos usados los
+  botones de Aceptar o Buardar. Ahora, esos cambios son temporales.
+- Algunos otros pequeños cambios y arreglos.
+
+Version 4.01
+------------
+- Cambiado el orden de eventos previos al cierre. El nuevo orden es:
+  ejecución de programa, captura de escritorio y cuelge del modem.
+- Arreglado un fallo que evitaba que funcionaran las opciones de linea
+  de comandos.
+- Arreglados algunos otros pequeños fallos.
+
+Version 4.00
+------------
+- Añadidas nuevas opciones de cierre: suspender, hibernar y bloquear
+  equipo.
+- La detección de inactividad de la CPU idle ahora funciona en Windows
+  NT/2000/XP (gracias a Alexey A. Dynnikov [ http://www.aldyn.ru/ ] por
+  su código de ejemplo).
+- Arreglado un fallo (tonto) que evitaba que funcionaran las opciones
+  de modem en Windows NT/2000/XP.
+- Añadidos parámetros de linea de comandos para colgar el modem,
+  suspender, hibernar y bloquear equipo.
+- Añadida opción de desactivar el salvapantallas mientras se monitoriza
+  la inactividad de la CPU para evitar que este pueda cargar la CPU.
+- Añadidadas algunas otras opciones menores.
+- Arreglados varios pequeños fallos.
+
+Version 3.53
+------------
+- Arreglado un fallo que causaba que el boton "Usar la hora actual mas"
+  hiciera a veces mal los calculos.
+- Arregaldo un fallo que podia provocar que fallara la ejecución de
+  programs desde el WinOFF en Windows 2000/XP
+- Arreglados algunos otros pequeños fallos.
+
+Versión 3.52
+------------
+- Arreglado un fallo en que evitaba el correcto funcionamiento de
+  los parámetros de linea de comandos.
+
+Versión 3.51
+------------
+- Arreglado un fallo en el proceso de carga de la RAS.DLL en
+  Windows 2000.
+
+Versión 3.5
+-----------
+- Opción de colgar el modem en vez de cerrar el equipo
+- Opción de de capturar el escritorio antes del cierre.
+- Opción de de ejecutar un programa antes del cierre.
+- Se puede poner una clave para acceder a la configuración.
+- Ahora la misma configuración se puede usar para todos los usuarios
+  de Windows.
+- Añadida una entrada al menu del icono de la barra de tareas para
+  cerrar el sistema inmediatamente.
+- Añadidas otras opciones menores.
+- Arreglados algunos pequeños fallos.
+
+
+Versión 3.0
+-----------
+- WinOFF ahora puede detectar la carga de la CPU y cerrar el sistema
+  cuando la CPU pasa a estar inactiva.
+- Opción de seleccinar el formato de la hora: 24 horas o AM/PM
+- Opción de mostrar una pantalla con la hora de apagado.
+- La cantidad de tiempo que la ventana de alerta es mostrada es ahora
+  configurable.
+- La ventana de alerta es mostrada ahora por encima de las otras
+  ventanas
+- Añadido un botón de Guardar en la ventana principal, para guardar
+  las opciones sin necesidad de activar ningún modo de apagado.
+- Arreglados algunos pequeños fallos.
+
+Versión 2.2
+-----------
+- Mejorado el soporte de linea de comandos para permitir ejecutar
+  WinOFF sin configuración previa.
+- Eliminada la restricción que no permitía ejecutar WinOFF en linea de
+  comandos si este estaba activo.
+
+Versión 2.1
+-----------
+- Añadido soporte de linea de commandos para cierre en proceso por
+  lotes.
+
+Versión 2.0
+-----------
+- Inteface mejorado.
+- Soporte para Windows 2000 y mejor soporte para Windows NT.
+- Opción de elegir el modo de cierre.
+- Opción de elegir modo forzado/no forzado
+- Soporte para fecha en el modo de cerrar a una hora determinada.
+- Opción de ejecutar al arracar Windows.
+- Botón para cerrar el sistema al momento.
+
+Versión 1.1
+-----------
+- Primera versión publicada en Internet.

@@ -1,0 +1,182 @@
+Version 5.0.1
+-------------
+- Fixed: The list of network adapters in Windows Vista/7 included also disabled adapters.
+- Fixed: The program failed sometimes to detect the list of network adapters, especially
+  in Vista/7.
+- Fixed: In certain situations the program failed to save the settings for all users in Vista/7.
+- Fixed: When using the same settings for all users in Vista/7 the program displayed an User
+  Account Control confirmation before activating the shut down planning, even if the settings
+  wasn't changed.
+- Fixed: The program didn't saved the shut down time AM/PM value properly.
+
+Version 5.0.0
+-------------
+- New shutdown mode: User inactivity (i.e. no mouse/keyboard activity).
+- New shutdown mode: Network inactivity (input and/or output transfer).
+- New planning option: Now you can use more than one shutdown condition at the same time
+  (e.g., shut down when there is no CPU nor network activity).
+- Improved compatibility with Windows Vista/7.
+- Option of average the values of CPU load for miminizing the effect of peak values.
+- Changes in the shutdown warning window:
+  · Added a Reconfigure button.
+  · The Reactivate button is replaced with the Snooze button for the "Date/time" and "Interval"
+    shutdown conditions.
+  · When using any of the buttons of that window the program will ask for the administrative
+    password (if one is set).
+- Changes in the display window:
+  · Several adjustments for reflecting better the planned shutdown.
+  · Option of set transparency.
+  · Modified (again) the background color of the graphics in order to make them more readable.
+- Fixed: Auto-reactivate shutdown didn't work with Lock session.
+- Fixed: the program checked the shutdown date even if the "Date/time" condition wasn't used.
+- Fixed: When using the "Date/time" condition, the shutdown wasn't performed if the system clock
+  was changed to a time after the shutdown time.
+- Fixed: If the whe screen saver was enabled at the shutdown time, the screen shot would capture it
+  instead of capturing the desktop contents.
+- Some other minor changes and fixes.
+
+Version 4.55
+------------
+- The interval for shut down can set also in days.
+- Fixed: the program failed to restore the main window from the taskbar icon if a secundary monitor
+  was connected or disconnected while the program was active.
+
+Version 4.51
+------------
+- Fixed a bug in the anti-close protection.
+
+Version 4.50
+------------
+- Added administrative shut down & restart, both in local and networked computers.
+- Improved program protection: if the program is killed, it can restart itself automatically or it
+  can perform an emergency shut down (now this works with Windows 2000/XP/Vista too).
+- Improved interface: added a menu bar and moved the action buttons to a toolbar. Also, now you can
+  enable and disable the shut down from the taskbar icon.
+- Added a button in the shut down confirmation dialog for reactivating/postponing the shut down.
+- If the program is already active and it's launched again, the running copy is activated instead
+  of showing a warning message.
+- Modified the color of the timer display graphics in order to make them more readable.
+- Fixed some bugs that prevented using the WIN key in a keyboard shortcut.
+- Added a help file.
+- Some other minor changes and fixes.
+
+Version 4.21
+------------
+- Fixed some problems with the CPU load meter.
+
+Version 4.20
+------------
+- Full support of Windows XP Themes (using Windows XP Theme Manager by Mike Lischke).
+- Added an option for explicitly reactivate or not the last programmed shut dow. This
+  allows running the program at session start without activating last shut down.
+- Related to the previous point, the shut down reactivation works now with all modes.
+- Changed the way the shut down by idle CPU works: now it's based in CPU use percentage
+  instead of using CPU idle percentage (which was rather confusing for some people).
+- The "Shut down now" menu/button now display a menu for choosing the type of shut down,
+  instead of using the last used shut down type.
+- The shut down date (if any is used) is shown in the display.
+- Fix: programming a shut down doesn't prevent the shut down of the system via the Start
+  Menu.
+- Fix: now you can specify command line parameters for the program that is executed before
+  the shut down.
+- Some other minor changes and fixes.
+
+Version 4.10
+------------
+- Added an option for hiding the tray bar icon (stealth mode). In this
+  mode, the configuration windows can be accessed using a hotkey.
+- The cancel button of the shut down warning window now could be disabled,
+  adding the possibility of showing a warning without allowing cancelling.
+- Added help hints for all options.
+- Fixed the bug when using settings for all users: Now restricted users
+  can read the global configuration.
+- Previously, changing the display options from the tray icon menu make
+  permanent that changes, although Save of OK buttons hadn't be used. Now
+  that changes are temporal.
+- Some other minor changes and fixes.
+
+Version 4.01
+------------
+- Changed the order of events before shutdown. The new order is:
+  program execution, desktop capture and modem hang up.
+- Fixed a bug that prevent the command-line features to work.
+- Some other minor bugs fixed.
+
+Version 4.00
+------------
+- Added new shut down options: suspend, hibernate and lock computer.
+- CPU idle detection now works in Windows NT/2000/XP (thanks to
+  Alexey A. Dynnikov [ http://www.aldyn.ru/ ] for his sample code).
+- Fixed a (stupid) bug that prevent the modem features to work in
+  Windows NT/2000/XP.
+- Added command-line parameters for hang up the modem, suspend,
+  hibernate and lock computer.
+- Added option for disabling the screen saver while monitoring the CPU
+  idle to prevent that it could load the CPU.
+- Some other minor features added.
+- Several minor bugs fixed.
+
+Version 3.53
+------------
+- Fixed a bug that caused that the "Used current time plus" button to
+  make bad calculations sometimes.
+- Fixed a bug that could make fail the execution of a program from
+  WinOFF in Windows 2000/XP
+- Some other minor bugs fixed.
+
+Version 3.52
+------------
+- Fixed a bug that prevent the command-line parameters to work
+  properly.
+
+Version 3.51
+------------
+- Fixed a bug in the RAS.DLL loading process in Windows 2000.
+
+Version 3.5
+-----------
+- Option for hang up the modem instead of doing a shut down.
+- Option for capture the desktop before the shut down.
+- Option for execute a program before the shut down.
+- A password can be set to access the configuration.
+- Now the same settings can be used for all Windows users.
+- Added a tray icon menu item to shut down the system immediately.
+- Added some other minor features.
+- Some minor bugs fixed.
+
+Version 3.0
+-----------
+- WinOFF can detect now the charge of the CPU and shut down the system
+  when the CPU becomes idle.
+- Option for select the time format: 24 hours or AM/PM.
+- Option for show a display with the shut down time.
+- The amount of time that the alert window is shown is now configurable.
+- The alert window is now shown on top of other windows.
+- Added a Save button in the main window, to save the options without
+  activate any shutdown mode.
+- Minor bugs fixed.
+
+Version 2.2
+-----------
+- Improved command line support with new options to allow to run
+  WinOFF in a batch process without previous configuration.
+- Eliminated the restriction that didn't allow run WinOFF in command
+  line mode if it be active.
+
+Version 2.1
+-----------
+- Added command line support for batch shut down.
+
+Version 2.0
+-----------
+- Improved interface.
+- Support for Windows 2000 and better support for Windows NT.
+- Option for choose the shut down mode.
+- Option for choose force/non force mode.
+- Date support in shut down at certain hour mode.
+- Option for start the program with Windows.
+- Button to close the system in the moment.
+
+Version 1.1
+-----------
+- First version published in Internet.
