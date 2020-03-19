@@ -1,0 +1,16 @@
+VC6.0显示行号的插件，很好很强大的显行号插件，使用VC6.0编程的朋友再也不用烦恼没有行号的编程环境了。
+
+VC显示行号插件使用说明：
+1. 如果你的VC安装在C盘，请拷贝文件VC6LineNumberAddin.dll到如下目录（在C代码中有复制命令）：
+C:\Program Files\Microsoft Visual Studio\Common\MSDev98\AddIns
+
+2. 注册
+双击VC6LineNumberAddin.reg进行注册。
+
+3. 启用
+打开vc6，菜单栏：Tools -> customize -> Add-ins and Macro Files
+选中VC6LineNumber Developer Studio Add-in
+
+以上两个文件在以下目录下：
+
+在F:\Website\notes\tools\vc++6.0LineNumberAddin目录下
